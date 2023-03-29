@@ -629,7 +629,7 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/PenguinManiack/Crucif
  
 Rayfield:LoadConfiguration()
 
-shears = local Tool = game:GetObjects("rbxassetid://12685165702")[1]
+shears = (local Tool = game:GetObjects("rbxassetid://12685165702")[1]
 local Humanoid = game.Players.LocalPlayer.Character:FindFirstChild("Humanoid")
 local Sound = Instance.new("Sound")
 
@@ -660,7 +660,7 @@ Tool.Unequipped:Connect(function()
     for _,anim in pairs(Humanoid.Animator:GetPlayingAnimationTracks()) do
         anim:Stop()
     end
-end)
+end))
 
 
 
